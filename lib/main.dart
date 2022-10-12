@@ -69,7 +69,7 @@ class _ScreenMoneyManagerState extends State<ScreenMoneyManager> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Personal Money Manager"),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.add))],
+       // actions: [IconButton(onPressed: () {}, icon: Icon(Icons.add))],
       ),
       body: Column(
         //  mainAxisAlignment: MainAxisAlignment.spaceAround,

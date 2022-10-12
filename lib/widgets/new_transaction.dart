@@ -34,7 +34,7 @@ class _NewTransactionState extends State<NewTransaction> {
       child: Container(
         padding: EdgeInsets.all(10),
         child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             TextField(
               controller: titleController,
@@ -55,6 +55,16 @@ class _NewTransactionState extends State<NewTransaction> {
                   // ),
                   labelText: "Amount"),
               onSubmitted: (_) => submitData(),
+            ),
+            Container(
+              height: 70,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("No date choosen"),
+                  TextButton(onPressed: (){}, child: Text("Choose date"))
+                ],
+              ),
             ),
             ElevatedButton(
                 onPressed: submitData, child: Text("Add transaction"))
