@@ -36,12 +36,13 @@ class _ScreenMoneyManagerState extends State<ScreenMoneyManager> {
   }
   
 
-  void _addNewTransactions(String txTitle, double txAmount) {
+  void _addNewTransactions(String txTitle, double txAmount,DateTime chosenDate) {
     final newTx = Transaction(
         id: DateTime.now().toString(),
         title: txTitle,
         amount: txAmount,
-        date: DateTime.now());
+        date: chosenDate
+        );
 
     setState(() {
       _userTransactions.add(newTx);
